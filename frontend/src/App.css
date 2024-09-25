@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+.allne{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4e7da; /* لون يشبه الحجر الفرعوني */
+  background-image: url(./component/image/back.jpg);
+}
+.containerr {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* لضمان تغطية الصورة بالكامل */
+  z-index: 1; /* تعيين الصورة فوق النص */
+}
+
+.door {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #c77033; /* لون خشبي للباب */
+  transition: transform 1.5s ease-in-out;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2; /* تعيين الأبواب فوق الصورة */
+}
+
+.door-left {
+  left: 0;
+  transform-origin: left;
+}
+
+.door-right {
+  right: 0;
+  transform-origin: right;
+}
+
+.open.door-left {
+  transform: rotateY(-90deg);
+}
+
+.open.door-right {
+  transform: rotateY(90deg);
+}
+
+h1.nefertari {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Papyrus", sans-serif;
+  font-size: 3rem;
+  color: #d4af37; /* لون ذهبي */
+  z-index: 3; /* النص يجب أن يكون فوق الصورة */
+}

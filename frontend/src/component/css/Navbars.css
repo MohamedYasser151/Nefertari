@@ -1,0 +1,43 @@
+.navbar{
+  /* box-shadow: 0 0 8px #fff; */
+  /* background: #000; */
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background:  #fff;
+  padding: 15px;
+  /* backdrop-filter: blur(8px);*/
+  background: #ffffff81; 
+  border-bottom:1px solid #000;
+  display:flex ;
+  align-items: center;
+
+
+}
+
+.icons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #000;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
+
+.icon {
+  border-radius: 50%;
+  box-shadow:  0 0 3px #000;
+  width: 60px;
+  height: 60px;
+  }
+  
